@@ -2,38 +2,78 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Your Name</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Your Name | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel = "script" href = "script.js">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Your Name</h1>
-        <p class="subtitle">Computer Science | ML | Research</p>
+<nav>
+    <h1 class="logo">YourName</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#chess">Chess</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle">☀️</button>
+</nav>
 
-        <section>
-            <h2>About Me</h2>
-            <p>
-                I am a first-year Computer Science student interested in
-                machine learning, mathematics, and building systems from first principles.
-            </p>
-        </section>
+<header>
+    <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+    <p>Computer Science | Mathematics | Machine Learning | Chess</p>
+</header>
 
-        <section>
-            <h2>Projects</h2>
-            <ul>
-                <li>Machine Learning from Scratch (NumPy)</li>
-                <li>Full-stack College Web Portal</li>
-                <li>Hackathon Projects</li>
-            </ul>
-        </section>
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student passionate about mathematics,
+        machine learning, research, and competitive chess.
+        I enjoy building systems from first principles and exploring
+        deep theoretical ideas.
+    </p>
+</section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>Email: yuthistan24@gmail.com</p>
-            <p>GitHub: github.com/yuthistan24</p>
-        </section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>ML From Scratch</h3>
+        <p>Building machine learning models using pure NumPy and mathematics.</p>
     </div>
+    <div class="card">
+        <h3>Web Systems</h3>
+        <p>Full-stack projects using HTML, CSS, JS, PHP, and MySQL.</p>
+    </div>
+</section>
 
+<section id="chess">
+    <h2>Chess</h2>
+    <p>
+        Main board player representing college. 4.5/5 at zonals.
+        Strong interest in positional play and tactical sacrifices.
+    </p>
+</section>
+
+<section id="research">
+    <h2>Research</h2>
+    <p>
+        Interested in number theory, graph theory, machine learning theory,
+        and algorithmic complexity.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: github.com/yourusername</p>
+</section>
+
+<footer>
+    <p>© 2026 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
