@@ -1,54 +1,641 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuthistan A | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Yuthistan A. — Computer Engineering student interested in mathematics, research, systems engineering and artificial intelligence.">
+    <meta name="author" content="Yuthistan A.">
+
+    <title>Yuthistan A. | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Yuthistan A</h1>
-    <p>AI | Mathematics | Systems</p>
-</header>
+    <div class="background-grid"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        I'm a first-year Computer Science Engineering student interested in 
-        Artificial Intelligence, Mathematics, and Systems. I enjoy working at 
-        the intersection of theory and implementation, building projects that 
-        combine deep mathematical ideas with real-world applications.
-    </p>
-</section>
+    <!-- Navigation -->
 
-<section class="work">
-    <h2>What I'm Working On</h2>
-    <ul>
-        <li>Research in Number Theory (Collatz-type problems)</li>
-        <li>Monte Carlo simulations and mathematical modeling</li>
-        <li>AI systems using local LLMs</li>
-        <li>Systems optimization and GPU computing</li>
-    </ul>
-</section>
+    <header class="navbar">
+        <a href="#home" class="logo">YA<span>.</span></a>
 
-<section class="tech">
-    <h2>Tech Stack</h2>
-    <p>Python, C/C++, NumPy, Docker, Git, Ollama, Local LLMs</p>
-</section>
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<section class="contact">
-    <h2>Contact</h2>
-    <p>Email: yuthistan24@gmail.com</p>
-    <p>LinkedIn: <a href="www.linkedin.com/in/yuthistan-a-85753b37b">LinkedIn</a></p>
-    <p>GitHub: <a href="https://github.com/yuthistan24">GitHub</a></p>
-</section>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
-<footer>
-    <p>© 2026 Yuthistan</p>
-</footer>
 
-<script src="script.js"></script>
+    <main>
+
+        <!-- Hero -->
+
+        <section class="hero section" id="home">
+
+            <div class="hero-content">
+
+                <div class="availability">
+                    <span class="status-dot"></span>
+                    COMPUTER ENGINEERING STUDENT
+                </div>
+
+                <p class="eyebrow">HELLO, WORLD. I'M</p>
+
+                <h1>
+                    Yuthistan
+                    <span class="accent">A.</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Building systems.<br>
+                    Exploring mathematics.
+                </h2>
+
+                <p class="hero-description">
+                    I am interested in the intersection of mathematics
+                    and computer science, from dynamical systems and
+                    theoretical concepts to intelligent software and
+                    systems engineering.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button primary-button">
+                        Explore my work <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="button secondary-button">
+                        Get in touch
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/yuthistan24" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a href="https://www.linkedin.com/in/Yuthistan" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a href="mailto:yuthistan24@gmail.com">Email ↗</a>
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="visual-card">
+
+                    <div class="card-header">
+                        <span>THOUGHT PROCESS</span>
+                        <span class="card-indicator">● ACTIVE</span>
+                    </div>
+
+                    <div class="math-display">
+                        <span class="math-symbol">∑</span>
+                        <span class="math-text">Ideas → Experiments → Systems</span>
+                    </div>
+
+                    <div class="code-display">
+                        <p><span class="code-purple">def</span> <span class="code-green">explore</span>(problem):</p>
+                        <p class="indent">question = <span class="code-orange">"why?"</span></p>
+                        <p class="indent">experiment = investigate(problem)</p>
+                        <p class="indent"><span class="code-purple">return</span> understand(experiment)</p>
+                    </div>
+
+                    <div class="visual-footer">
+                        <span>MATHEMATICS</span>
+                        <span>SYSTEMS</span>
+                        <span>RESEARCH</span>
+                    </div>
+
+                </div>
+
+                <div class="floating-symbol symbol-one">π</div>
+                <div class="floating-symbol symbol-two">λ</div>
+                <div class="floating-symbol symbol-three">∫</div>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                SCROLL TO EXPLORE
+            </div>
+
+        </section>
+
+
+        <!-- About -->
+
+        <section class="section about-section" id="about">
+
+            <div class="section-heading">
+                <span class="section-number">01 / ABOUT</span>
+                <h2>A little about <span>me.</span></h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-main">
+                    <p class="large-text">
+                        I am a Computer Science and Engineering student
+                        at <span class="accent">Kongu Engineering College</span>,
+                        driven by curiosity about how things work.
+                    </p>
+
+                    <p>
+                        My interests span pure mathematics, theoretical
+                        computer science, artificial intelligence,
+                        operating systems, and infrastructure.
+                    </p>
+
+                    <p>
+                        I enjoy approaching problems from first principles,
+                        building things to test ideas, and understanding
+                        the mechanisms beneath the abstractions.
+                    </p>
+
+                    <p>
+                        I am particularly interested in research and in
+                        the connections between mathematical structures
+                        and computational systems.
+                    </p>
+                </div>
+
+
+                <div class="about-details">
+
+                    <div class="detail-item">
+                        <span class="detail-label">EDUCATION</span>
+                        <span class="detail-value">B.E. Computer Science and Engineering</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">INSTITUTION</span>
+                        <span class="detail-value">Kongu Engineering College</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">LOCATION</span>
+                        <span class="detail-value">Tamil Nadu, India</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">PRIMARY LANGUAGES</span>
+                        <span class="detail-value">Python · C · Java</span>
+                    </div>
+
+                    <div class="detail-item">
+                        <span class="detail-label">CURRENT ENVIRONMENT</span>
+                        <span class="detail-value">Arch Linux</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Interests -->
+
+        <section class="section interests-section" id="interests">
+
+            <div class="section-heading">
+                <span class="section-number">02 / INTERESTS</span>
+                <h2>Things I like <span>exploring.</span></h2>
+            </div>
+
+            <div class="interest-grid">
+
+                <article class="interest-card">
+                    <span class="interest-icon">∑</span>
+                    <h3>Mathematics</h3>
+                    <p>
+                        Number theory, dynamical systems, mathematical
+                        logic, abstract structures, and computational
+                        mathematics.
+                    </p>
+                    <span class="card-index">01</span>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-icon">⌘</span>
+                    <h3>Systems Engineering</h3>
+                    <p>
+                        Linux, operating systems, infrastructure,
+                        distributed systems, and high-performance
+                        computing.
+                    </p>
+                    <span class="card-index">02</span>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-icon">◇</span>
+                    <h3>Artificial Intelligence</h3>
+                    <p>
+                        Local language models, intelligent assistants,
+                        agentic workflows, and AI-powered applications.
+                    </p>
+                    <span class="card-index">03</span>
+                </article>
+
+                <article class="interest-card">
+                    <span class="interest-icon">∞</span>
+                    <h3>Research</h3>
+                    <p>
+                        Exploring mathematical problems, theoretical
+                        concepts, and the intersection of mathematics
+                        and computer science.
+                    </p>
+                    <span class="card-index">04</span>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Technologies -->
+
+        <section class="section technology-section">
+
+            <div class="section-heading">
+                <span class="section-number">03 / TOOLBOX</span>
+                <h2>Technologies I <span>work with.</span></h2>
+            </div>
+
+            <div class="technology-container">
+
+                <div class="technology-group">
+                    <h3>Programming</h3>
+                    <div class="technology-list">
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <div class="technology-group">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="technology-list">
+                        <span>Ollama</span>
+                        <span>Local LLMs</span>
+                        <span>Agentic Systems</span>
+                    </div>
+                </div>
+
+                <div class="technology-group">
+                    <h3>Systems & Infrastructure</h3>
+                    <div class="technology-list">
+                        <span>Linux</span>
+                        <span>Arch Linux</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Bash</span>
+                        <span>Slurm</span>
+                    </div>
+                </div>
+
+                <div class="technology-group">
+                    <h3>Databases & Tools</h3>
+                    <div class="technology-list">
+                        <span>SQLite</span>
+                        <span>MySQL</span>
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Hugo</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-heading">
+                <span class="section-number">04 / SELECTED WORK</span>
+                <h2>Things I've <span>built.</span></h2>
+            </div>
+
+            <p class="section-intro">
+                A selection of projects, experiments, and engineering
+                work that reflect my interests.
+            </p>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">ARTIFICIAL INTELLIGENCE</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>Local AI Assistant</h3>
+
+                    <p>
+                        An experimental locally hosted AI assistant
+                        exploring language models, tool-based interaction,
+                        and intelligent workflows.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>LLMs</span>
+                        <span>Ollama</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">SOFTWARE ENGINEERING</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>Vaanam Airport</h3>
+
+                    <p>
+                        An airport management simulation involving
+                        scheduling, graph algorithms, authentication,
+                        and database-backed operations.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Algorithms</span>
+                        <span>SQLite</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">ACCESSIBILITY</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>Accessible Computing</h3>
+
+                    <p>
+                        Exploring AI-assisted system-level computer
+                        interaction to improve independent access
+                        to computing systems.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Python</span>
+                        <span>Systems</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">SOCIAL IMPACT</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>AI Complaint System</h3>
+
+                    <p>
+                        A complaint-management solution designed
+                        around users with limited digital literacy
+                        and access to conventional interfaces.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Python</span>
+                        <span>Accessibility</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">APPLICATION DEVELOPMENT</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>PFADS</h3>
+
+                    <p>
+                        A mental-health assessment and support
+                        application developed during EAREYES 2K26,
+                        progressing from the Top 25 ideas to
+                        hackathon implementation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                        <span>Application Development</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-category">WEB DEVELOPMENT</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+
+                    <h3>TNJUG Events Website</h3>
+
+                    <p>
+                        Built the Tamil Nadu Java User Group events
+                        website using Hugo and GitHub Pages.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Hugo</span>
+                        <span>GitHub Pages</span>
+                        <span>Static Sites</span>
+                    </div>
+
+                    <a class="project-link" href="https://tamilnadujug.org/events/" target="_blank" rel="noopener noreferrer">
+                        Visit website ↗
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Research -->
+
+        <section class="section research-section" id="research">
+
+            <div class="section-heading">
+                <span class="section-number">05 / RESEARCH</span>
+                <h2>Curiosity beyond <span>code.</span></h2>
+            </div>
+
+            <div class="research-card">
+
+                <div class="research-meta">
+                    <span>MATHEMATICS</span>
+                    <span>ICAMAIMM-26</span>
+                </div>
+
+                <h3>
+                    Periodic Orbits in a Parameterized Family
+                    of Collatz-Type Maps
+                </h3>
+
+                <p>
+                    Research presentation investigating periodic orbits
+                    in a parameterized family of Collatz-type dynamical
+                    systems.
+                </p>
+
+                <p>
+                    The work involved independently developing
+                    mathematical lemmas and studying the behaviour
+                    of parameterized maps.
+                </p>
+
+                <div class="research-footer">
+                    <span>Research Presentation</span>
+                    <span>ICAMAIMM-26 · GRI</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Achievements -->
+
+        <section class="section achievements-section">
+
+            <div class="section-heading">
+                <span class="section-number">06 / RECOGNITION</span>
+                <h2>Milestones & <span>activities.</span></h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <h3>First Place — Ideathon</h3>
+                        <p>Recognition for an ideation and problem-solving effort.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <h3>Second Place — Robotics Hackathon</h3>
+                        <p>Developed a cleaning robot involving obstacle detection and path planning.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <h3>Top 25 — EAREYES 2K26</h3>
+                        <p>Selected among the Top 25 ideas before the hackathon implementation stage.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <h3>TNJUG Campus Lead</h3>
+                        <p>Campus leadership and involvement with the Tamil Nadu Java User Group.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="timeline-marker"></span>
+                    <div>
+                        <h3>CSI Executive Member</h3>
+                        <p>Active involvement in the Computer Society of India student community.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-content">
+
+                <span class="section-number">07 / CONTACT</span>
+
+                <h2>
+                    Have an interesting<br>
+                    problem? <span>Let's talk.</span>
+                </h2>
+
+                <p>
+                    I'm always interested in discussing mathematics,
+                    research, systems, technology, and interesting ideas.
+                </p>
+
+                <a href="mailto:yuthistan24@gmail.com" class="button primary-button">
+                    Get in touch ↗
+                </a>
+
+                <div class="contact-links">
+                    <a href="https://github.com/yuthistan24" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/Yuthistan" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://yuthistan24.github.io/" target="_blank" rel="noopener noreferrer">Portfolio</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <a href="#home" class="logo">YA<span>.</span></a>
+
+        <p>Designed and built by Yuthistan A.</p>
+
+        <p class="footer-quote">
+            Stay curious. Keep building. Never stop questioning.
+        </p>
+
+        <span class="copyright">
+            © <span id="year"></span> Yuthistan A.
+        </span>
+
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
